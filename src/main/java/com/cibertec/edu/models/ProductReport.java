@@ -1,7 +1,7 @@
 package com.cibertec.edu.models;
 
 import java.util.List;
-
+import java.util.ArrayList;
 public class ProductReport {
 
 		private List<Product>productosList;
@@ -18,8 +18,8 @@ public class ProductReport {
 		public String getDescripcion() {
 			return descripcion;
 		}
-		public String getFecha() {
-			return fecha_registro;
+		public void setDescripcion(String descripcion) {
+			this.descripcion =descripcion;
 		}
 		public List<Product>getProductsList(){
 			return productosList;
@@ -29,10 +29,10 @@ public class ProductReport {
 			this.productosList=productosList;
 		}
 		
-		public String getDescripcion1() {
+		public String getFecha() {
 			return descripcion;
 		}
-		public void setDescripcion(String descripcion) {
-			this.descripcion=descripcion;
+		public void setFecha(String fecha_registro) {
+			this.fecha_registro = fecha_registro;
 		}
 }
